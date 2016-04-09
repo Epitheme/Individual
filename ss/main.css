@@ -210,6 +210,15 @@ html, body {
   -moz-transition: all 175ms ease;
   transition: all 175ms ease; }
 
+section {
+  padding: 3.125em 0; }
+  section header h1 {
+    color: #1d1d1d;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase; }
+
 html {
   font-size: 62.5%; }
   @media screen and (min-width: 33.75em) {
@@ -359,5 +368,17 @@ html {
     font-size: 6.75em;
     font-weight: 700;
     text-transform: uppercase; }
+
+.about {
+  background: #fdfdfd;
+  background: #fdfdfd;
+  text-align: center; }
+  .about p {
+    width: 100%;
+    max-width: 36.25em;
+    margin: 0.3125em auto 0;
+    color: #555;
+    font-size: 1.375em;
+    line-height: 1.8; }
 
 /*# sourceMappingURL=main.css.map */

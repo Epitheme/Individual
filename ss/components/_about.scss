@@ -1,0 +1,14 @@
+.about {
+	@include background($color-white);
+	text-align: center;
+
+	p {
+		width: 100%;
+		max-width: em(580px);
+		@include margin(em(5px) auto 0);
+
+		color: $color-emperor;
+		font-size: em(22px);
+		line-height: 1.8;
+	}
+}
