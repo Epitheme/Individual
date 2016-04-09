@@ -47,8 +47,8 @@ $color-malibu: #5AC8FB;
 *****************************************************************
 ****************************************************************/
 // Typography
-$body-font: "Roboto", sans-serif;
-$title-font: $body-font;
+$body-font: "Georgia", "Times New Roman", serif;
+$title-font: "Montserrat", sans-serif;
 $font-sizes: 48px 36px 24px 18px 16px 12px;
 $em-base: 16px !default;
 $default-font-weight: 500;
@@ -76,7 +76,7 @@ $title-lh: 1.33;
 *****************************************************************
 ****************************************************************/
 // Misc
-$border-radius: 3px;
+$border-radius: 0;
 $md-spacing: $body-lh * 1em;
 $sm-spacing: $md-spacing / 8;
 

@@ -185,7 +185,7 @@ table {
   -o-transform: translateY(-50%);
   transform: translateY(-50%); }
 
-button, input {
+button, .intro a, input {
   -webkit-transition: all 175ms ease;
   -moz-transition: all 175ms ease;
   transition: all 175ms ease; }
@@ -227,13 +227,13 @@ html {
 
 body {
   color: #1d1d1d;
-  font-family: "Roboto", sans-serif;
+  font-family: "Georgia", "Times New Roman", serif;
   font-size: 1em;
   font-weight: 500;
   line-height: 1.25; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Georgia", "Times New Roman", serif;
   font-weight: 500;
   line-height: 1.25;
   margin: 0;
@@ -258,7 +258,7 @@ h6 {
   font-size: 0.75em; }
 
 p {
-  font-family: "Roboto", sans-serif;
+  font-family: "Georgia", "Times New Roman", serif;
   font-size: 1.125em;
   font-weight: 400;
   line-height: 1.8; }
@@ -279,24 +279,26 @@ a {
     .button-container {
       text-align: center; } }
 
-button {
-  height: 3.125em;
-  width: 15.625em;
-  margin: 2em 0 0;
-  color: #fdfdfd;
-  background-color: #5AC8FB;
-  font-family: "Roboto", sans-serif;
-  font-size: 1.125em;
-  font-weight: 500;
+button, .intro a {
+  display: block;
+  height: 2.8125em;
+  width: 12.5em;
+  margin: 2em auto 0;
+  line-height: 2.8125em;
+  color: #1d1d1d;
+  background-color: #fdfdfd;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.25em;
+  font-weight: 700;
   border: 0;
-  border-radius: 3px;
+  border-radius: 0;
   outline: none;
-  text-transform: uppercase; }
-  button:hover {
-    background-color: #5fcafb; }
-  @media screen and (max-width: 61.625em) {
-    button {
-      margin: 2em auto 0; } }
+  text-transform: uppercase;
+  opacity: 1; }
+  button:hover, .intro a:hover {
+    background-color: #1d1d1d;
+    color: #fdfdfd;
+    opacity: 1; }
 
 input {
   height: 3.125em;
@@ -307,7 +309,7 @@ input {
   background-color: #fdfdfd;
   border: 0;
   border-radius: 1px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1em;
   font-weight: 500;
   text-align: left;
@@ -336,5 +338,26 @@ html {
     clear: both;
     content: "";
     display: table; }
+
+.intro {
+  height: 100%;
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+  background: url(../images/background.jpg) no-repeat center center;
+  background: url(../images/background.jpg) no-repeat center center;
+  background-size: cover;
+  color: #fdfdfd;
+  text-align: center; }
+  .intro h3 {
+    font-family: "Georgia", "Times New Roman", serif;
+    font-size: 1.5em;
+    font-style: italic;
+    opacity: 0.75; }
+  .intro h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 6.75em;
+    font-weight: 700;
+    text-transform: uppercase; }
 
 /*# sourceMappingURL=main.css.map */
