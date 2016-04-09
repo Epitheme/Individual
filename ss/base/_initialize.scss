@@ -1,0 +1,21 @@
+html, body {
+	@include full-screen;
+	@include zero-box;
+	@include background(url(../images/background.jpg) no-repeat center left);
+	background-size: cover;
+
+	@media screen and (max-width: $bp-md) {
+		@include background(linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) 70%), url(../images/background.jpg) no-repeat center left);
+		background-size: cover;
+	}
+}
+
+.display-none {
+	display: none;
+	@include transition(all $animation-duration $animation-timing);
+}
+
+.visible-none {
+	opacity: 0;
+	@include transition(all $animation-duration $animation-timing);
+}
