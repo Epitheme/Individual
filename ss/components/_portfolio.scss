@@ -1,0 +1,93 @@
+.portfolio {
+	@include background($color-gallery);
+	
+	.grid {
+		@include outer-container(80%);
+		@include row;
+		@include margin(em(30px) auto 0);
+
+		@media screen and (max-width: $bp-md) {
+			@include outer-container(100%);
+		}
+	}
+
+}
+
+.project {
+	@include span-columns(3);
+	height: 12vw;
+	@include margin(0 0 em(20px));
+	@include padding(0 em(30px));
+
+	div.background {
+		@include full-screen;
+	}
+
+	a.overlay {
+		display: block;
+		@include size(100% 100%);
+		@include padding(em(30px));
+		@include background(rgba(0, 0, 0, 0));
+		color: $color-white;
+
+		opacity: 0;
+		text-align: center;
+		
+		@extend %transition;
+
+		&:hover {
+			opacity: 1 !important;
+			@include background(rgba(0, 0, 0, 0.5));
+		}
+
+		h2.name {
+			font-family: $title-font;
+			font-size: em(32px);
+			text-transform: uppercase;
+		}
+
+		p {
+			@include margin(0);
+		}
+	}
+}
+
+#project-1 {
+	@include background(url(https://d13yacurqjgara.cloudfront.net/users/938318/screenshots/2523727/calculator.jpg) no-repeat center center);
+	background-size: cover;
+}
+
+#project-2 {
+	@include background(url(https://d13yacurqjgara.cloudfront.net/users/938318/screenshots/2539254/dribbble_-_text_editor.jpg) no-repeat center center);
+	background-size: cover;
+}
+
+#project-3 {
+	@include background(url(https://d13yacurqjgara.cloudfront.net/users/938318/screenshots/2538028/pricing_plans.jpg) no-repeat center center);
+	background-size: cover;
+}
+
+#project-4 {
+	@include background(url(https://d13yacurqjgara.cloudfront.net/users/938318/screenshots/2565634/profile_cards.jpg) no-repeat center center);
+	background-size: cover;
+}
+
+#project-5 {
+	@include background(url(https://d13yacurqjgara.cloudfront.net/users/938318/screenshots/2560283/available_for_hire.jpg) no-repeat center center);
+	background-size: cover;
+}
+
+#project-6 {
+	@include background(url(https://d13yacurqjgara.cloudfront.net/users/938318/screenshots/2640096/16_-_youtube.jpg) no-repeat center center);
+	background-size: cover;
+}
+
+#project-7 {
+	@include background(url(https://d13yacurqjgara.cloudfront.net/users/938318/screenshots/2635257/15_-_product_sale.jpg) no-repeat center center);
+	background-size: cover;
+}
+
+#project-8 {
+	@include background(url(https://d13yacurqjgara.cloudfront.net/users/938318/screenshots/2580496/explore_products.jpg) no-repeat center center);
+	background-size: cover;
+}

@@ -185,7 +185,7 @@ table {
   -o-transform: translateY(-50%);
   transform: translateY(-50%); }
 
-button, .intro a, input {
+button, .intro a, input, .project a.overlay {
   -webkit-transition: all 175ms ease;
   -moz-transition: all 175ms ease;
   transition: all 175ms ease; }
@@ -380,5 +380,108 @@ html {
     color: #555;
     font-size: 1.375em;
     line-height: 1.8; }
+
+.portfolio {
+  background: #eee;
+  background: #eee; }
+  .portfolio .grid {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin: 1.875em auto 0; }
+    .portfolio .grid::after {
+      clear: both;
+      content: "";
+      display: table; }
+    .portfolio .grid::after {
+      clear: both;
+      content: "";
+      display: table; }
+    @media screen and (max-width: 61.625em) {
+      .portfolio .grid {
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto; }
+        .portfolio .grid::after {
+          clear: both;
+          content: "";
+          display: table; } }
+
+.project {
+  float: left;
+  display: block;
+  margin-right: 0%;
+  width: 25%;
+  height: 12vw;
+  margin: 0 0 1.25em;
+  padding: 0 1.875em; }
+  .project:last-child {
+    margin-right: 0; }
+  .project div.background {
+    height: 100%;
+    width: 100%;
+    min-height: 100%;
+    margin: 0; }
+  .project a.overlay {
+    display: block;
+    height: 100%;
+    width: 100%;
+    padding: 1.875em;
+    background: transparent;
+    background: transparent;
+    color: #fdfdfd;
+    opacity: 0;
+    text-align: center; }
+    .project a.overlay:hover {
+      opacity: 1 !important;
+      background: rgba(0, 0, 0, 0.5);
+      background: rgba(0, 0, 0, 0.5); }
+    .project a.overlay h2.name {
+      font-family: "Montserrat", sans-serif;
+      font-size: 2em;
+      text-transform: uppercase; }
+    .project a.overlay p {
+      margin: 0; }
+
+#project-1 {
+  background: url(https://d13yacurqjgara.cloudfront.net/users/938318/screenshots/2523727/calculator.jpg) no-repeat center center;
+  background: url(https://d13yacurqjgara.cloudfront.net/users/938318/screenshots/2523727/calculator.jpg) no-repeat center center;
+  background-size: cover; }
+
+#project-2 {
+  background: url(https://d13yacurqjgara.cloudfront.net/users/938318/screenshots/2539254/dribbble_-_text_editor.jpg) no-repeat center center;
+  background: url(https://d13yacurqjgara.cloudfront.net/users/938318/screenshots/2539254/dribbble_-_text_editor.jpg) no-repeat center center;
+  background-size: cover; }
+
+#project-3 {
+  background: url(https://d13yacurqjgara.cloudfront.net/users/938318/screenshots/2538028/pricing_plans.jpg) no-repeat center center;
+  background: url(https://d13yacurqjgara.cloudfront.net/users/938318/screenshots/2538028/pricing_plans.jpg) no-repeat center center;
+  background-size: cover; }
+
+#project-4 {
+  background: url(https://d13yacurqjgara.cloudfront.net/users/938318/screenshots/2565634/profile_cards.jpg) no-repeat center center;
+  background: url(https://d13yacurqjgara.cloudfront.net/users/938318/screenshots/2565634/profile_cards.jpg) no-repeat center center;
+  background-size: cover; }
+
+#project-5 {
+  background: url(https://d13yacurqjgara.cloudfront.net/users/938318/screenshots/2560283/available_for_hire.jpg) no-repeat center center;
+  background: url(https://d13yacurqjgara.cloudfront.net/users/938318/screenshots/2560283/available_for_hire.jpg) no-repeat center center;
+  background-size: cover; }
+
+#project-6 {
+  background: url(https://d13yacurqjgara.cloudfront.net/users/938318/screenshots/2640096/16_-_youtube.jpg) no-repeat center center;
+  background: url(https://d13yacurqjgara.cloudfront.net/users/938318/screenshots/2640096/16_-_youtube.jpg) no-repeat center center;
+  background-size: cover; }
+
+#project-7 {
+  background: url(https://d13yacurqjgara.cloudfront.net/users/938318/screenshots/2635257/15_-_product_sale.jpg) no-repeat center center;
+  background: url(https://d13yacurqjgara.cloudfront.net/users/938318/screenshots/2635257/15_-_product_sale.jpg) no-repeat center center;
+  background-size: cover; }
+
+#project-8 {
+  background: url(https://d13yacurqjgara.cloudfront.net/users/938318/screenshots/2580496/explore_products.jpg) no-repeat center center;
+  background: url(https://d13yacurqjgara.cloudfront.net/users/938318/screenshots/2580496/explore_products.jpg) no-repeat center center;
+  background-size: cover; }
 
 /*# sourceMappingURL=main.css.map */
